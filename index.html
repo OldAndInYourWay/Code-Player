@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CodePlayer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <p>CodePlayer</p>
+            </div>
+            <div id="run">
+                <button>Run</button>
+            </div>
+            <div id="options">
+                <ul>
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle">JS</li>
+                    <li class="toggle selected">RESULT</li>
+                </ul>
+            </div>
+        </div>
+        <div id="codebody">
+            <div class="code-container" id="HTMLcode">
+                <div class="label">HTML</div>
+                <textarea id="htmlbody">
+                </textarea>
+            </div>
+
+            <div class="code-container" id="CSScode" style="display:none;">
+                <div class="label">CSS</div>
+                <textarea id="cssbody">
+                </textarea>
+            </div>
+
+            <div class="code-container" id="JScode" style="display:none;">
+                <div class="label">JS</div>
+                <textarea id="jsbody">
+                </textarea>
+            </div>
+
+            <div class="code-container" id="RESULTcode">
+                <div class="label">RESULT</div>
+                <iframe id="resultbody">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
